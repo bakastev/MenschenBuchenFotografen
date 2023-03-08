@@ -5511,6 +5511,7 @@ a {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
+  text-align: left;
   letter-spacing: 0em;
   white-space: normal;
 }
