@@ -61,15 +61,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 </style>
  <style>
-        .tidycal-embed {
-            min-width: 320px;
+        .calendar-container {
+            width: 320px;
             height: 630px;
+            border: 1px solid #ccc; 
+            overflow: auto; 
         }
 
+        /* Größere Ansicht für Desktops */
         @media (min-width: 768px) {
-            .tidycal-embed {
-                min-width: 100%; /* oder die gewünschte Breite für Desktop */
-                height: auto;   /* oder die gewünschte Höhe für Desktop */
+            .calendar-container {
+                width: 80%;  /* Zum Beispiel 80% der Bildschirmbreite */
+                height: 80vh; /* Zum Beispiel 80% der Bildschirmhöhe */
+                margin: 0 auto; /* Zentriert den Container horizontal */
             }
         }
     </style>
@@ -125,8 +129,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="columns-15 f2wf-columns-4 _1-2">
         <div class="html-embed w-embed w-script">
           <!--  Calendly Inline-Widget Beginn  -->
-         <div class="tidycal-embed" data-path="menschen-buchen-fotografen/erstberatung"></div>
-         <script src="https://assets.tidycal.com/js/embed.js" async></script>
+         <div class="calendar-container">
+    <div class="tidycal-embed" data-path="menschen-buchen-fotografen/erstberatung"></div>
+</div>
+<script src="https://assets.tidycal.com/js/embed.js" async></script>
           <!--  Calendly Inline-Widget Ende  -->
         </div>
       </div>
