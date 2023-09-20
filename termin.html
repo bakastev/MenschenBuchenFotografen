@@ -60,6 +60,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 }
 </style>
+  <style>
+        .calendar-container {
+            width: 320px;
+            height: 630px;
+            border: 1px solid #ccc; /* optional, nur um den Container sichtbar zu machen */
+            overflow: auto; /* Damit der Inhalt scrollbar ist, falls er den Container übersteigt */
+        }
+    </style>
 </head>
 <body>
   <div class="new-page-4">
@@ -112,8 +120,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="columns-15 f2wf-columns-4 _1-2">
         <div class="html-embed w-embed w-script">
           <!--  Calendly Inline-Widget Beginn  -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/menschen-buchen-fotografen/kostenfreies-erstgespraech?hide_gdpr_banner=1&primary_color=a37b39" style="min-width:320px;height:630px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
+         <div class="calendar-container">
+    <div class="tidycal-embed" data-path="menschen-buchen-fotografen/erstberatung"></div>
+</div>
+
+<script src="https://assets.tidycal.com/js/embed.js" async></script>
           <!--  Calendly Inline-Widget Ende  -->
         </div>
       </div>
